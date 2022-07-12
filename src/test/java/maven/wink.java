@@ -29,8 +29,8 @@ WebElement alb=driver.findElement(By.xpath("//button[text()='Albums']"));
 	ac.moveToElement(alb).click().build().perform();
 	Thread.sleep(3000);
 driver.findElement(By.xpath("//*[contains(text(),'Sid Sriram Swag')]")).click();	
-	
-	
+
+
 	
 	}
 	}

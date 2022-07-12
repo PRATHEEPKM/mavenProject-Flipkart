@@ -30,11 +30,12 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Flipkart {
 private static Object FileOutputStream;
-
+ static WebDriver driver;
 public static void main(String[] args) throws InterruptedException, IOException {
 	System.setProperty("webdriver.edge.driver","C:\\Users\\pratheep.km\\eclipse-workspace\\Selineam\\Drivers\\msedgedriver.exe");
-	WebDriver driver= new EdgeDriver();
-	driver.get("https://www.flipkart.com/");
+	 driver= new EdgeDriver();
+	 String url="https://www.flipkart.com/";
+	driver.get(url);
 	driver.manage().window().maximize();
 	driver.findElement(By.xpath("(//button[text()])[1]")).click();
 	driver.findElement(By.xpath("//*[@type='text']")).sendKeys("Redmi mobile",Keys.ENTER);
